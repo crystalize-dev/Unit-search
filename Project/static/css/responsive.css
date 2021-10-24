@@ -35,14 +35,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /*  General CSS  */
 body{
     background: rgb(0, 0, 0);
@@ -81,17 +73,7 @@ h5, h6          { font-weight: bolder }
     *zoom: 1;  
 }
 
-
-
-
-
-
-
-
-
-
 /*  Header Section  */
-
 header{
     width: 100%;
     height: 100px;
@@ -101,35 +83,6 @@ header{
 header .logo{
     margin-top: 40px;
     float: left;
-}
-
-
-header nav{
-    float: right;
-    opacity: 1;
-}
-
-
-header nav ul{
-    margin-top: 40px;
-    list-style: none;
-    overflow: hidden;
-    float: left;
-}
-
-header nav ul li{
-    float: left;
-    margin-left: 50px;
-}
-
-header nav ul li a,
-header nav .login_btn{
-    text-decoration: none;
-    color: #fff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-
 }
 
 header nav .login_btn{
@@ -151,7 +104,6 @@ header nav .login_btn:hover{
 }
 
 /*  Hero Section  */
-
 .hero{
     width: 100%;
     height: 900px;
@@ -190,103 +142,6 @@ header nav .login_btn:hover{
     left: 1px;
 }
 
-
-
-/*  footer  */
-footer{
-    padding-top: 100px;
-    background: rgb(0, 0, 0);
-}
-
-footer .footer > ul{
-    overflow: hidden;
-}
-
-footer .footer > ul > li{
-    display: block;
-    float: left;
-    list-style: none;
-    margin-right: 60px;
-}
-
-footer .footer > ul > li:last-child{
-    margin-right: 0;
-}
-
-
-footer .footer > ul > li.links{
-    width: 197px;
-}
-
-footer ul li.links > ul > li{
-    display: block;
-    width: 100%;
-    list-style: none;
-    margin-bottom: 27px;
-}
-
-footer ul li.links > ul > li:last-child{
-    margin-bottom: 0;
-}
-
-footer .footer > ul > li.links li a{
-    text-decoration: none;
-    display: block;
-    color: #fff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    letter-spacing: .5px;
-    text-align: left;
-}
-
-footer .footer > ul > li.about{
-    width: 327px;
-}
-
-footer ul li.about p{
-    color: #fff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    letter-spacing: .5px;
-    line-height: 34px;
-    margin-top: -9px;
-}
-
-footer ul li.about > ul > li{
-    display: inline-block;
-    margin-right: 20px;
-    margin-top: 30px;
-}
-
-footer ul li.about > ul > li:last-child{
-    margin-right: 0;
-}
-
-footer ul li.about > ul > li a.facebook{
-    display: block;
-    width: 10px;
-    height: 18px;
-    background-position: 0 0;
-}
-footer ul li.about > ul > li a.twitter{
-    display: block;
-    width: 19px;
-    height: 18px;
-    background-position: -11px 0px;
-}
-footer ul li.about > ul > li a.google{
-    display: block;
-    width: 10px;
-    height: 18px;
-    background-position: -31px 0px;
-}
-footer ul li.about > ul > li a.skype{
-    display: block;
-    width: 17px;
-    height: 18px;
-    background-position: -43px 0px;
-}
-
 footer .copyrights{
     display: block;
     text-align: center;
@@ -299,46 +154,11 @@ footer .copyrights{
     border-top: 1px solid #ffffff;
 }
 
-footer .copyrights a.ph_link{
-    font-family: "lato-bold", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-
 
 /*  responsive css */
-
-
 @media (max-width:1500px){
     .hero{
         height: 800px;
-    }
-}
-
-
-@media (max-width: 1150px){
-    .wrapper{
-        padding: 0 40px;
-        max-width: 1020px;
-    }
-
-    footer .footer > ul > li{
-        margin-right: 5.454545454545455%;
-    }
-
-    footer .footer > ul > li.links{
-        width: 17.90909090909091%;
-    }
-
-    footer .footer > ul > li.about{
-        width: 29.72727272727273%;
     }
 }
 
@@ -357,103 +177,6 @@ footer .copyrights a.ph_link{
         margin: 0;
         left: 0;
     }
-
-    header a.hamburger{
-        display: block;
-    }
-
-    header nav{
-        position: absolute;
-        display: none;
-        width: 92.72727272727273%;
-        top: 95px;
-        left: 3.636363636363636%;
-        float: none;
-        z-index: 20;
-        overflow: hidden;
-        background: #fff;
-        border-top: 5px solid rgba(194, 11, 11, 0.47);
-    }
-
-    header nav.active{
-        display: block;
-    }
-
-    header nav .login_btn{
-        float: none;
-        display: inline-block;
-        width: 100%;
-        border: 0;
-        margin: 0;
-        padding: 20px 0;
-        text-align: center;
-        background: #f2f3f3;
-    }
-
-    header nav ul{
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-top: 0;
-    }
-
-    header nav ul li{
-        display: block;
-        width: 100%;
-        float: none;
-        margin-left: 0;
-    }
-
-    header nav ul li a{
-        display: block;
-        padding: 25px 0;
-        border-bottom: 1px solid #f2f3f3;
-
-        transition: background .2s linear;
-        -webkit-transition: background .2s linear;
-        -moz-transition: background .2s linear;
-        -o-transition: background .2s linear;
-    }
-
-    header nav ul li a:active{
-        background: #f2f3f3;
-    }
-
-    header nav ul li a,
-    header nav .login_btn{
-        color: #1c3655;
-    }
-
-    header nav .login_btn:hover{
-        background: rgba(194, 11, 11, 0.47);
-    }
-
-    header nav ul li:last-child{
-        border: 0;
-    }
-
-    footer .footer > ul > li{
-        width: 29.6969696969697%!important;
-        margin-right: 5.454545454545455%;
-        margin-bottom: 100px;
-    }
-
-    footer .footer > ul > li:nth-child(3){
-        margin-right: 0;
-    }
-
-    footer .footer > ul > li.links li a{
-        text-align: center;
-    }
-
-    footer .footer > ul > li.about{
-        text-align: center;
-        float: none;
-        display: inline;
-        margin-right: 100%;
-        overflow: hidden;
-        border-top: 1px solid rgba(194, 11, 11, 0.47);
-    }
 }
 
 
@@ -464,22 +187,5 @@ footer .copyrights a.ph_link{
 
     .hero .caption h3{
         font-size: 16px;
-    }
-
-    footer .footer > ul > li.links,
-    footer .footer > ul > li.about{
-        float: none;
-        width: 100%!important;
-        margin-right: 0;
-        margin-bottom: 60px;
-        padding-bottom: 60px;
-    }
-
-    footer .footer > ul > li:last-child{
-        padding-bottom: 0;
-    }
-
-    footer .footer > ul > li.links{
-        border-bottom: 1px solid rgba(194, 11, 11, 0.47);
     }
 }
