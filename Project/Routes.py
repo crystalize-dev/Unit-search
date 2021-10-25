@@ -1,31 +1,15 @@
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_user, login_required, logout_user
+from sqlalchemy.exc import NoResultFound
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from Project import db, app
-from Project.Classes import Message, User
+from Project.Classes import User
 
 
 @app.route('/', methods=['GET'])
 def hello_world():
-    return render_template('index.html')
-
-
-@app.route('/main', methods=['GET'])
-@login_required
-def main():
-    return render_template('Main.html', messages=Message.query.all())
-
-
-@app.route('/add_message', methods=['POST'])
-@login_required
-def add_message():
-    text = request.form['text']
-    tag = request.form['tag']
-    db.session.add(Message(text, tag))
-    db.session.commit()
-
-    return redirect(url_for('main'))
+    return render_template('Guest.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -41,11 +25,14 @@ def login_page():
 
             next_page = request.args.get('next')
 
-            return redirect(next_page)
+            if next_page is None:
+                return render_template('Auth.html')
+            else:
+                return redirect(next_page)
         else:
-            flash('Login or password is not correct')
+            flash('Логин или пароль не верны')
     else:
-        flash('Please fill login and password fields')
+        flash('Пожалуйста введи логин и пароль')
 
     return render_template('login.html')
 
@@ -58,16 +45,26 @@ def register():
 
     if request.method == 'POST':
         if not (login or password or password2):
-            flash('Please, fill all fields!')
+            flash('Пожалуйста заполните все поля!')
         elif password != password2:
-            flash('Passwords are not equal!')
+            flash('Пароли не совпадают!')
         else:
-            hash_pwd = generate_password_hash(password)
-            new_user = User(login=login, password=hash_pwd)
-            db.session.add(new_user)
-            db.session.commit()
+            try:
+                user = User.query.filter_by(login=User.login)
+            except NoResultFound:
+                pass
+            except Exception:
+                flash('Такое имя уже занято!')
 
-            return redirect(url_for('login_page'))
+            try:
+                hash_pwd = generate_password_hash(password)
+                new_user = User(login=login, password=hash_pwd)
+                db.session.add(new_user)
+                db.session.commit()
+
+                return redirect(url_for('login_page'))
+            except:
+                print('Error while writing in db')
 
     return render_template('register.html')
 

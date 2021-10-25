@@ -11,9 +11,10 @@
 	<section class="hero">
 		<header>
 			<div class="wrapper">
-				<a><img src="../static/img/logo.png" class="logo" alt="" titl=""/></a>
+				<a><img src="../static/img/logo.png" class="logo"/></a>
 				<nav>
-					<a href="{{ url_for('login_page') }}" class="login_btn">Login</a>
+					{% block Auth %}
+					{% endblock %}
 				</nav>
 			</div>
 		</header>

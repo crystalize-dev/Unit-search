@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login page</title>
+    <title>Money Hunt</title>
+	<meta charset="utf-8">
 
+	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="../static/css/Login.css">
 </head>
 <body>
-<h1>Login page</h1>
-
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <ul class=flashes>
-    {% for message in messages %}
-      <li>{{ message }}</li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-{% endwith %}
-
-<form method="POST">
-    <table>
-        <tr>
-            <td>Login</td>
-            <td><input type="text" name="login"></td>
-        </tr>
-        <tr>
-            <td>Password</td>
-            <td><input type="password" name="password"></td>
-        </tr>
-        <tr>
-            <td><a href="{{ url_for('register') }}">Register</a></td>
-            <td><input type="submit" value="Login"></td>
-        </tr>
-    </table>
-</form>
+<section class="hero">
+		<header>
+			<div class="wrapper">
+				<a><img src="../static/img/logo.png" class="logo"/></a>
+			</div>
+		</header>
+           <form method="post" class="register">
+            <input class="buttons_reg" name="login" id="login" type="text" placeholder="Введите логин">
+            <input class="buttons_reg" name="password" id="password" type="password" placeholder="Введите пароль">
+			<a class="button_submit" type="button" href="{{ url_for('register') }}">Регистрация</a>
+            <input class="button_submit" type="submit" value="Войти">
+			   <span class="error">
+			   {% with messages = get_flashed_messages() %}
+				  {% if messages %}
+					<ul class=flashes>
+					{% for message in messages %}
+					<li>{{ message }}</li>
+					{% endfor %}
+					</ul>
+				  {% endif %}
+				{% endwith %}
+			   </span>
+		    </form>
+	</section>
+	<footer>
+		<div class="copyrights wrapper">
+			Copyright © 2021 All Rights Reserved.
+		</div>
+	</footer>
 </body>
 </html>

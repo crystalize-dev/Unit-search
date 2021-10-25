@@ -12,4 +12,4 @@ manager = LoginManager(app)
 from Project import Classes, Routes
 
 
-db.create_all()
+#db.create_all()
