@@ -1,5 +1,12 @@
 {% extends 'index.html' %}
 
-{% block Auth %}
+{% block login_button %}
     <a href="{{ url_for('login_page') }}" class="login_btn">Войти</a>
+{% endblock %}
+
+{% block games %}
+    <section class="caption">
+        <br><br><br><h2 class="caption">Money hunt</h2>
+        <br><br><br><h3 class="properties">our money - is yours</h3>
+    </section>
 {% endblock %}

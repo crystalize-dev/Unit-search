@@ -6,6 +6,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/games.css">
 </head>
 <body>
 	<section class="hero">
@@ -13,15 +14,13 @@
 			<div class="wrapper">
 				<a><img src="../static/img/logo.png" class="logo"/></a>
 				<nav>
-					{% block Auth %}
+					{% block login_button %}
 					{% endblock %}
 				</nav>
 			</div>
 		</header>
-			<section class="caption">
-				<br><br><br><h2 class="caption">Money hunt</h2>
-				<br><br><br><h3 class="properties">our money - is yours</h3>
-			</section>
+				{% block games %}
+				{% endblock %}
 	</section>
 	<footer>
 		<div class="copyrights wrapper">

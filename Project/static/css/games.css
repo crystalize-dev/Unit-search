@@ -1,0 +1,20 @@
+
+.games {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-flex;
+    height: 80%;
+    width: 97%;
+    background: rgba(0, 0, 0, 0.29);
+    border-radius: 25px;
+}
+
+
+.game_logo1, .game_logo2 {
+    width: 256px;
+    height: 256px;
+    box-shadow: 5px 5px black;
+    margin: 50px 50px;
+    border: 2px solid rgba(0, 0, 0, 0.78);
+    border-radius: 5px;
+}

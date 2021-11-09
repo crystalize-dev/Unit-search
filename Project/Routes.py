@@ -26,7 +26,7 @@ def login_page():
             next_page = request.args.get('next')
 
             if next_page is None:
-                return render_template('Auth.html')
+                return redirect(url_for('main_page'))
             else:
                 return redirect(next_page)
         else:
@@ -62,7 +62,7 @@ def register():
                 db.session.add(new_user)
                 db.session.commit()
 
-                return redirect(url_for('login_page'))
+                return redirect(url_for('main_page'))
             except:
                 print('Error while writing in db')
 
@@ -83,3 +83,15 @@ def redirect_to_signing(response):
         return redirect(url_for('login_page') + '?next=' + request.url)
 
     return response
+
+
+@app.route('/blackJack', methods=['GET', 'POST'])
+@login_required
+def game1():
+    return render_template('BlackJack.html')
+
+
+@app.route('/Games', methods=['GET', 'POST'])
+@login_required
+def main_page():
+    return render_template('Auth.html')

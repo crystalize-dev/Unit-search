@@ -1,5 +1,12 @@
 {% extends 'index.html' %}
 
-{% block Auth %}
+{% block login_button %}
     <a href="{{ url_for('logout') }}" class="login_btn">Выйти</a>
+{% endblock %}
+
+{% block games %}
+    <section class="games">
+        <a href="{{ url_for('game1') }}" class="link"><img src="../static/img/game1.png" class="game_logo1"/></a>
+        <a href="{{ url_for('game1') }}" class="link"><img src="../static/img/game2.jpg" class="game_logo2"/></a>
+    </section>
 {% endblock %}

@@ -20,12 +20,6 @@
         quotes:none;
     }
 
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content:'';
-        content:none;
-    }
-
     a {
         margin:0;
         padding:0;
@@ -53,4 +47,20 @@
 
     input, select {
         vertical-align:middle;
+    }
+
+    .game1 {
+        margin-top: 30px;
+        margin-left: 30px;
+        display: inline-flex;
+        height: 80%;
+        width: 97%;
+        background: rgba(0, 0, 0, 0.29);
+        border-radius: 25px;
+    }
+
+    .display {
+        width: 256px;
+        height: 256px;
+        margin: 120% 120% 120% 280%;
     }
