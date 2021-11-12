@@ -154,8 +154,6 @@ footer .copyrights{
     border-top: 1px solid #ffffff;
 }
 
-
-/*  responsive css */
 @media (max-width:1500px){
     .hero{
         height: 800px;
@@ -170,7 +168,7 @@ footer .copyrights{
 
     .hero .caption{
         width: 92.72727272727273%;
-        padding: 0 3.636363636363636%; 
+        padding: 0 3.636363636363636%;
     }
 
     .hero .caption h3{
@@ -180,12 +178,12 @@ footer .copyrights{
 }
 
 
-@media (max-width:500px){
-    .hero .caption h2{
+@media (max-width:500px) {
+    .hero .caption h2 {
         font-size: 85px;
     }
 
-    .hero .caption h3{
+    .hero .caption h3 {
         font-size: 16px;
     }
 }

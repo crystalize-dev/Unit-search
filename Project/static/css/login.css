@@ -1,0 +1,77 @@
+.register {
+    display:  flex;
+    flex-flow: column;
+    background: rgba(0, 0, 0, 0.52);
+    height: 89%;
+}
+
+.buttons_reg1 {
+    height: 70px;
+    width: 300px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.69);
+    border: 2px solid rgba(0, 0, 0, 0.73);
+    border-radius: 5px;
+    margin: 10% auto 5px auto;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.buttons_reg2 {
+    height: 70px;
+    width: 300px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.69);
+    border: 2px solid rgba(0, 0, 0, 0.73);
+    border-radius: 5px;
+    margin: 10px auto 5px auto;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.logo {
+    position: absolute;
+    margin-left: 45%;
+}
+
+.ErrorLogin {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.button_submit {
+    font-family: Garamond, monospace;
+    font-size: 30px;
+    height: 47px;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.54);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 10px auto 5px auto;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.ul, .error {
+    font-family: "Roboto Thin", serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.78);
+    margin-left: -25px;
+}
+
+.button_submit_reg {
+    font-family: "Roboto Thin", serif;
+    font-size: 30px;
+    height: 47px;
+    text-align: center;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.54);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 10px auto 5px auto;
+    color: rgba(255, 255, 255, 0.7);
+}
+
