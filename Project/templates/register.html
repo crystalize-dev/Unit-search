@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Money Hunt</title>
+    <title>Registration</title>
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
@@ -10,26 +10,21 @@
 </head>
 <body>
 <section class="hero">
-		<header>
-			<div class="wrapper">
-				<a><img src="../static/img/logo.png" class="logo"/></a>
-			</div>
-		</header>
            <form method="post" class="register">
             <input class="buttons_reg1" name="login" id="login" type="text" placeholder="Введите логин">
             <input class="buttons_reg2" name="password" id="password" type="password" placeholder="Введите пароль">
             <input class="buttons_reg2" name="password2" id="password2" type="password" placeholder=" Повторите пароль">
             <input class="button_submit_reg" type="submit" value="Зарегистрироваться">
 			   <span class="error">
-			   {% with messages = get_flashed_messages() %}
-				  {% if messages %}
-					<ul class=flashes>
-					{% for message in messages %}
-					<li>{{ message }}</li>
-					{% endfor %}
-					</ul>
-				  {% endif %}
-				{% endwith %}
+				   {% with messages = get_flashed_messages() %}
+					  {% if messages %}
+						<ul class=flashes>
+							{% for message in messages %}
+							{{ message }}
+							{% endfor %}
+						</ul>
+					  {% endif %}
+					{% endwith %}
 			   </span>
 		    </form>
 	</section>

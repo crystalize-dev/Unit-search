@@ -44,18 +44,11 @@ def register():
     password2 = request.form.get('password2')
 
     if request.method == 'POST':
-        if not (login or password or password2):
+        if not (login and password and password2):
             flash('Пожалуйста заполните все поля!')
         elif password != password2:
             flash('Пароли не совпадают!')
         else:
-            try:
-                user = User.query.filter_by(login=User.login)
-            except NoResultFound:
-                pass
-            except Exception:
-                flash('Такое имя уже занято!')
-
             try:
                 hash_pwd = generate_password_hash(password)
                 new_user = User(login=login, password=hash_pwd)
@@ -64,7 +57,7 @@ def register():
 
                 return redirect(url_for('main_page'))
             except:
-                print('Error while writing in db')
+                flash('Такое имя уже занято!')
 
     return render_template('register.html')
 
@@ -83,12 +76,6 @@ def redirect_to_signing(response):
         return redirect(url_for('login_page') + '?next=' + request.url)
 
     return response
-
-
-@app.route('/blackJack', methods=['GET', 'POST'])
-@login_required
-def game1():
-    return render_template('BlackJack.html')
 
 
 @app.route('/Games', methods=['GET', 'POST'])

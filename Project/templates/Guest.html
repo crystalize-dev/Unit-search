@@ -1,12 +1,25 @@
-{% extends 'index.html' %}
-
-{% block login_button %}
-    <a href="{{ url_for('login_page') }}" class="login_btn">Войти</a>
-{% endblock %}
-
-{% block games %}
-    <section class="caption">
-        <br><br><br><h2 class="caption">Money hunt</h2>
-        <br><br><br><h3 class="properties">our money - is yours</h3>
-    </section>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Messenger</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/games.css">
+</head>
+<body>
+	<section class="hero">
+		<section class="caption">
+			<h2 class="caption">Hello</h2>
+			<br><h3 class="properties">Please register to continue</h3>
+			<br><br><br><a href="{{ url_for('login_page') }}" class="login_btn">Войти</a>
+		</section>
+	</section>
+	<footer>
+		<div class="copyrights wrapper">
+			Copyright © 2021 All Rights Reserved.
+		</div>
+	</footer>
+</body>
+</html>
