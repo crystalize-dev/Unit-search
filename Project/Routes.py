@@ -4,12 +4,23 @@ from sqlalchemy.exc import NoResultFound
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from Project import db, app
-from Project.Classes import User
+from Project.Classes import User, Message
 
 
 @app.route('/', methods=['GET'])
 def hello_world():
     return render_template('Guest.html')
+
+
+@app.route('/add_message', methods=['POST'])
+@login_required
+def add_message():
+    text = request.form['text']
+
+    db.session.add(Message(text))
+    db.session.commit()
+
+    return redirect(url_for('main_page'))
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -78,7 +89,7 @@ def redirect_to_signing(response):
     return response
 
 
-@app.route('/Games', methods=['GET', 'POST'])
+@app.route('/Messenger', methods=['GET', 'POST'])
 @login_required
 def main_page():
-    return render_template('Auth.html')
+    return render_template('Auth.html', messages=Message.query.all())

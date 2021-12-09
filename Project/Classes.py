@@ -5,9 +5,12 @@ from Project import db, manager
 
 class Message(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    sender = db.Column(db.String(512), nullable=False)
-    room = db.Column(db.String(128), nullable=False)
-    message = db.Column(db.String(1024), nullable=False)
+    #sender = db.Column(db.String(512), nullable=False)
+    #room = db.Column(db.String(128), nullable=False)
+    text = db.Column(db.String(1024), nullable=False)
+
+    def __init__(self, text):
+        self.text = text.strip()
 
 
 class User (db.Model, UserMixin):
