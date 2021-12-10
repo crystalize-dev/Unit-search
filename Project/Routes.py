@@ -1,6 +1,7 @@
+import sqlite3
+
 from flask import render_template, redirect, url_for, request, flash
 from flask_login import login_user, login_required, logout_user
-from sqlalchemy.exc import NoResultFound
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from Project import db, app
@@ -92,4 +93,4 @@ def redirect_to_signing(response):
 @app.route('/Messenger', methods=['GET', 'POST'])
 @login_required
 def main_page():
-    return render_template('Auth.html', messages=Message.query.all())
+    return render_template('Auth.html', messages=Message.query.all(), friends=db.session.query(User.login).all())

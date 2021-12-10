@@ -24,16 +24,17 @@
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3">
                             <div class="users-container">
                                 <ul class="users">
+                                    {% for el in friends %}
                                     <li class="person" data-chat="person1">
                                         <div class="user">
                                             <img src="../static/img/no%20avatar.png">
-                                            <span class="status busy"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
-                                            <span class="name">Здесь имя пользователя</span>
-                                            <span class="time">Дата</span>
+                                            <span class="name">{{ el.login }}</span>
                                         </p>
                                     </li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>
@@ -48,6 +49,7 @@
                                             <div class="chat-text">
                                                 <br>
                                                     {{ message.text }}&nbsp;
+                                            </div>
                                     </li>
                                     {% endfor %}
                                 </ul>
