@@ -8,7 +8,7 @@ from Project.Classes import User
 
 @app.route('/', methods=['GET'])
 def hello_world():
-    return render_template('hello_world.html')
+    return render_template('index.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])

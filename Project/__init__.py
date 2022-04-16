@@ -9,7 +9,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 manager = LoginManager(app)
 
-#from Project import Classes, Routes
-
+from Project import Classes, Routes
 
 #db.create_all()

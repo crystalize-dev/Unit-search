@@ -1,0 +1,99 @@
+
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+html {
+	overflow-y: hidden;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: -1;
+	background: url(../img/back.jpg);
+	background-size: 100%;
+	filter: blur(2px);
+}
+
+.firstLine {
+	width: 100%;
+	height: 100px;
+	background: rgb(0, 0, 0, 0.3);
+	box-shadow: 0 0 40px 40px rgb(0, 0, 0, 0.3);
+}
+
+.logo {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 90px;
+	left: 5%;
+	top: 10%
+}
+
+.linkButton {
+	background: none;
+	color: white;
+	display: inline-block;
+	position: relative;
+	top:  35%;
+	right: 2%;
+
+	margin-right: 30px;
+	text-align: center;
+	float: right;
+
+	width: 150px;
+	height: 50px;
+
+	border-radius: 100px;
+	border-style: none;
+	border-width: 1px;
+
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	text-shadow: 2px 2px 4px 10px black;
+}
+
+.linkButton:hover {
+	box-shadow: 2px 2px 2px black;
+	border-style: solid;
+	border-color: white;
+}
+
+.linkButton:active {
+	background: white;
+	color: black;
+}
+
+.mainZone {
+	text-align: center;
+	color: white;
+	height: 500px;
+}
+
+.mainTitle, .secondTitle {
+	text-shadow: 4px 4px 5px black;
+	position: relative;
+	top: 28%;
+
+	font-family: 'Comfortaa', cursive;
+}
+
+.mainTitle {
+	font-size: 100px;
+}
+
+.secondTitle {
+	font-size: 25px;
+}
+
+.mainTitle, .secondTitle, .linkButton, .logo {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;  
+  -khtml-user-select: none;    
+  -moz-user-select: none;      
+  -ms-user-select: none;       
+  user-select: none;  
+}

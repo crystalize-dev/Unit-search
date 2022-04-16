@@ -2,52 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae9e6f98-2632-43c9-8cd4-d96afda87962" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Classes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/My_site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/My_site.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/MainDB.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/css/chat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/css/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/lato-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/p22_corinthia.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/p22_corinthia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/p22_corinthia.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/fonts/p22_corinthia.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/img/hero.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/static/img/no avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/.idea/casino html.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/Auth.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/Guest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/templates/sample.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/templates/hello_world.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +28,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PyCharm projects\Project\static" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="My_site" type="PythonConfigurationType" factoryName="Python">
@@ -80,7 +49,7 @@
         <env name="FLASK_APP" value="main.py" />
         <env name="FLASK_DEBUG" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\man21\PycharmProjects\My_site\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="E:\PyCharm projects\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -105,13 +74,27 @@
       <option name="presentableId" value="Default" />
       <updated>1646234264816</updated>
       <workItem from="1646234268899" duration="114000" />
+      <workItem from="1650138695503" duration="512000" />
+      <workItem from="1650139301614" duration="1027000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PyCharm_projects$My_site.coverage" NAME="My_site Coverage Results" MODIFIED="1650140292668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/My_site$My_site.coverage" NAME="My_site Coverage Results" MODIFIED="1646234348377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
