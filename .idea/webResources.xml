@@ -5,9 +5,10 @@
       <entry url="file://$PROJECT_DIR$">
         <entryData>
           <resourceRoots>
-            <path value="file://$PROJECT_DIR$/Project/static/img" />
             <path value="file://$PROJECT_DIR$/Project/static/css" />
+            <path value="file://$PROJECT_DIR$/Project/static/img" />
             <path value="file://$PROJECT_DIR$/Project/static/js" />
+            <path value="file://$PROJECT_DIR$/Project/static/img" />
           </resourceRoots>
         </entryData>
       </entry>

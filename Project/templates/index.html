@@ -4,21 +4,22 @@
   <meta charset="utf-8">
   <title>Usearch - быстрый поиск тиммейта</title>
 
-  <link rel="shortcut icon" href="../static/img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../static/img/log.png" type="image/x-icon">
   <script type="text/javascript" src="../static/js/main.js"></script>
   <link rel="stylesheet" href="../static/css/style1.css">
  </head>
 
  <body>
+    <div class="roundLogo">
+        <img src="../static/img/log.png" class="logo" alt="Logo"/>
+    </div>
     <div class="firstLine">
-        <img src="../static/img/logo.png" class="logo" alt="Logo"/>
-        <button class="linkButton">About Ass</button>
-        <button class="linkButton">Register</button>
-        <button class="linkButton">Login</button>
+        <div class="mainTitle">Usearch</div>
+        <a class="linkButton" href="{{ url_for('main_page') }}">About Ass</a>
+        <a class="linkButton" href="{{ url_for('register_page') }}">Register</a>
+        <a class="linkButton" href="{{ url_for('login_page') }}">Login</a>
     </div>
     <div class="mainZone">
-        <div class="mainTitle">Usearch</div>
-        <div class="secondTitle">search teammates in 1 click</div>
     </div>
  </body>
 </html>

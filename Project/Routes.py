@@ -37,7 +37,7 @@ def login_page():
 
 
 @app.route('/register', methods=['GET', 'POST'])
-def register():
+def register_page():
     login = request.form.get('login')
     password = request.form.get('password')
     password2 = request.form.get('password2')
