@@ -5,8 +5,9 @@
   <title>Usearch - быстрый поиск тиммейта</title>
 
   <link rel="shortcut icon" href="../static/img/log.png" type="image/x-icon">
-  <script type="text/javascript" src="../static/js/main.js"></script>
-  <link rel="stylesheet" href="../static/css/style1.css">
+  <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/js/mainPage.js"></script>
+  <link rel="stylesheet" href="../static/css/mainPage.css">
  </head>
 
  <body>
@@ -14,12 +15,31 @@
         <img src="../static/img/log.png" class="logo" alt="Logo"/>
     </div>
     <div class="firstLine">
-        <div class="mainTitle">Usearch</div>
-        <a class="linkButton" href="{{ url_for('main_page') }}">About Ass</a>
-        <a class="linkButton" href="{{ url_for('register_page') }}">Register</a>
-        <a class="linkButton" href="{{ url_for('login_page') }}">Login</a>
+        <p class="mainTitle">Usearch</p>
+        <a class="linkButton addbtn" href="{{ url_for('main_page') }}">About Ass</a>
+        <a class="linkButton regbtn" onclick="showHide('registerWindow', 'reg')">Register</a>
+        <a class="linkButton logbtn" onclick="showHide('loginWindow', 'log')">Login</a>
     </div>
-    <div class="mainZone">
-    </div>
+
+    <div class="background" id="background"></div>
+
+    <form  method="post" class="loginWindow" id="loginWindow">
+        <img src="../static/img/close.png" class="close_img" onclick="showHide('loginWindow', '')">
+        <input type="text" name="login" id="login" class="input" placeholder="Логин" autocomplete="off">
+        <input type="password" name="password" id="password" class="input" placeholder="Пароль" autocomplete="off">
+        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" onclick="showHidePass('password')">
+        <label for="checkbox">Показать / скрыть пароль</label>
+        <input class="submit" type="submit" value="Войти">
+    </form>
+
+    <form  method="post" class="loginWindow" id="registerWindow">
+        <img src="../static/img/close.png" class="close_img" onclick="showHide('registerWindow')">
+        <input type="text" name="login" id="login1" class="input1" placeholder="Логин" autocomplete="off">
+        <input type="password" name="password1" id="password1" class="input1" placeholder="Пароль" autocomplete="off">
+        <input type="password" name="password2" id="password2" class="input1" placeholder="Подтвердите пароль" autocomplete="off">
+        <input type="checkbox" name="checkbox1" id="checkbox1" class="checkbox" onclick="showHidePass('password1')">
+        <label for="checkbox1">Показать / скрыть пароль</label>
+        <input class="submit" type="submit" value="Войти">
+    </form>
  </body>
 </html>
