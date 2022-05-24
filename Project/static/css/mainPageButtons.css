@@ -1,0 +1,141 @@
+.loginWindow {
+	display: none;
+	position: absolute;
+	margin: 40px calc(50% - 200px);
+
+	width: 400px;
+	height: 500px;
+
+	border-radius: 15px;
+	background: rgb(17, 17, 17);
+	box-shadow: 0 0 10px 3px black;
+
+	color: white;
+	z-index: 2;
+}
+
+.close_img {
+	position: relative;
+	left: calc(100% - 30px);
+	top: 8px;
+
+	width: 20px;
+	height: 20px;
+}
+
+.input1 {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	border-image: linear-gradient(to top, #00c9cd, #38056b);
+}
+
+.input1 {
+	height: 70px;
+    width: 300px;
+
+    text-align: center;
+    margin: 30px auto 5px auto;
+
+	border-image-slice: 1;
+	background: radial-gradient(rgb(45, 45, 45), rgb(17, 17, 17));
+    color: white;
+	outline: none;
+
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+}
+
+.input {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	border-image: linear-gradient(to top, #00c9cd, #38056b);
+}
+
+.input {
+	height: 70px;
+    width: 300px;
+
+    text-align: center;
+    margin: 15% auto 5px auto;
+
+	border-image-slice: 1;
+	background: radial-gradient(rgb(45, 45, 45), rgb(17, 17, 17));
+    color: white;
+	outline: none;
+
+	font-family: 'Comfortaa', cursive;
+	font-size: 25px;
+}
+
+.submit {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	height: 70px;
+    width: 300px;
+
+    text-align: center;
+    margin: 10% auto 5px auto;
+
+	background: radial-gradient(rgb(45, 45, 45), rgb(17, 17, 17));
+    color: rgb(170, 170, 170);
+	border: 1px solid #bbbbbb;
+	border-radius: 50em;
+
+	font-family: 'Comfortaa', cursive;
+	font-size: 25px;
+}
+
+.submit:hover {
+	background: black;
+	color: white;
+	border: 1px solid white;
+}
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.checkbox+label {
+	position: relative;
+	display: inline-flex;
+	top: 5px;
+	left: 11%;
+
+	align-items: center;
+	user-select: none;
+
+	color: rgb(197, 197, 197);
+	font-family: 'Comfortaa', cursive;
+	font-size: 13px;
+}
+
+.checkbox+label::before {
+	content: '';
+	display: inline-block;
+
+	width: 1em;
+	height: 1em;
+
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #494949;
+	border-radius: 0.25em;
+
+	margin-right: 0.5em;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+.checkbox:checked+label::before {
+	background: radial-gradient(#00c9cd, #38056b);
+}
