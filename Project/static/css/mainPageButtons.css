@@ -1,141 +1,133 @@
-.loginWindow {
-	display: none;
+@import url('http://fonts.cdnfonts.com/css/renogare-soft');
+
+body {
+	background-color: #16161A;
+}
+
+.wrapper {
 	position: absolute;
-	margin: 40px calc(50% - 200px);
+	width: 99%;
+	height: 98%;
 
-	width: 400px;
-	height: 500px;
-
-	border-radius: 15px;
-	background: rgb(17, 17, 17);
-	box-shadow: 0 0 10px 3px black;
-
-	color: white;
-	z-index: 2;
+    background-color: rgba(0, 0, 0, 0.44);
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.44);
 }
 
-.close_img {
-	position: relative;
-	left: calc(100% - 30px);
-	top: 8px;
-
-	width: 20px;
-	height: 20px;
-}
-
-.input1 {
+.window {
 	position: relative;
 	display: flex;
 	flex-flow: column;
-	border-image: linear-gradient(to top, #00c9cd, #38056b);
+
+	top: 10%;
+	left: calc(50% - (150px + 2vw));
+
+	width: calc(300px + 4vw);
+	height: calc(200px + 30vh);
+
+	background-color: black;
+	border-radius: 10px;
 }
 
-.input1 {
-	height: 70px;
-    width: 300px;
-
-    text-align: center;
-    margin: 30px auto 5px auto;
-
-	border-image-slice: 1;
-	background: radial-gradient(rgb(45, 45, 45), rgb(17, 17, 17));
-    color: white;
-	outline: none;
-
-	font-family: 'Comfortaa', cursive;
-	font-size: 20px;
-}
-
-.input {
+.button {
 	position: relative;
 	display: flex;
-	flex-flow: column;
-	border-image: linear-gradient(to top, #00c9cd, #38056b);
+	margin-top: 40px;
+    left: 15%;
+
+	text-align: center;
+    transition: 0.5s;
+
+	width: 70%;
+	height: 10%;
+
+    background-color: white;
+    color: black;
+    border-style: none;
+    border-radius: 0;
+    outline: none;
+    font-family: 'Renogare Soft', sans-serif;
 }
 
-.input {
-	height: 70px;
-    width: 300px;
-
-    text-align: center;
-    margin: 15% auto 5px auto;
-
-	border-image-slice: 1;
-	background: radial-gradient(rgb(45, 45, 45), rgb(17, 17, 17));
-    color: white;
-	outline: none;
-
-	font-family: 'Comfortaa', cursive;
-	font-size: 25px;
+.button::placeholder {
+ color: #333333;
 }
 
-.submit {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-
-	height: 70px;
-    width: 300px;
-
-    text-align: center;
-    margin: 10% auto 5px auto;
-
-	background: radial-gradient(rgb(45, 45, 45), rgb(17, 17, 17));
-    color: rgb(170, 170, 170);
-	border: 1px solid #bbbbbb;
-	border-radius: 50em;
-
-	font-family: 'Comfortaa', cursive;
-	font-size: 25px;
+.button:focus {
+ background-color: #7f5af0;
 }
 
-.submit:hover {
-	background: black;
-	color: white;
-	border: 1px solid white;
+.button:focus::placeholder {
+ color: transparent;
+}
+
+.button:target {
+ background-color: #7f5af0;
 }
 
 .checkbox {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-}
-
-.checkbox+label {
 	position: relative;
-	display: inline-flex;
+	margin: 0;
+    left: 15%;
+
+	width: 14px;
+	height: 14px;
+
 	top: 5px;
-	left: 11%;
-
-	align-items: center;
-	user-select: none;
-
-	color: rgb(197, 197, 197);
-	font-family: 'Comfortaa', cursive;
-	font-size: 13px;
 }
 
-.checkbox+label::before {
-	content: '';
-	display: inline-block;
+.submit {
+ top: 5%;
+ justify-content: center;
+ align-items: center;
 
-	width: 1em;
-	height: 1em;
-
-	flex-shrink: 0;
-	flex-grow: 0;
-	border: 1px solid #494949;
-	border-radius: 0.25em;
-
-	margin-right: 0.5em;
-
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 50% 50%;
+ font-size: 20px;
+ background-color: #7f5af0;
+ border-radius: 20px;
 }
 
-.checkbox:checked+label::before {
-	background: radial-gradient(#00c9cd, #38056b);
+.header {
+ position: relative;
+ top: 10px;
+ left: 15%;
+
+ font-family: 'Renogare Soft', sans-serif;
+ color: white;
 }
+
+.line {
+ position: relative;
+ border-bottom: 1px solid #7f5af0;
+ left: 15%;
+ width: 70%;
+}
+
+.register_transition {
+ position: relative;
+ display: inline-flex;
+ align-items: center;
+
+ justify-content: center;
+
+ top: 10px;
+ left: 15%;
+ width: 70%;
+
+ font-family: 'Renogare Soft', sans-serif;
+ font-size: 14px;
+ color: white;
+}
+
+.register_transition p {
+ display: inline;
+}
+
+.register_transition a {
+ display: inline;
+ margin-left: 5px;
+ text-decoration-color: #2cb67d;
+}
+
+.register_transition a:visited {
+ color: #2cb67d;
+}
+

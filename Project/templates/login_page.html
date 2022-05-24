@@ -3,8 +3,36 @@
 <head>
 	<title>Please login!!!!! :((((</title>
 	<meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/css/mainPageButtons.css">
+    <script type="javascript" src="../static/js/loginWindow.js"></script>
 </head>
 <body>
-
+    <div class="wrapper">
+        <form method="post" class="window">
+            <p class="header">Register</p>
+            <div class="line"></div>
+            <input type="text" name="login" id="login" placeholder="Enter login" class="button" autocomplete="off">
+            <input type="password" name="password" id="password" placeholder="Enter password" class="button" autocomplete="off">
+            <input type="checkbox" class="checkbox">
+            <span class="error_msg">
+			   {% with messages = get_flashed_messages() %}
+				  {% if messages %}
+					<ul class=flashes>
+					{% for message in messages %}
+					{{ message }}
+					{% endfor %}
+					</ul>
+				  {% endif %}
+				{% endwith %}
+            </span>
+            <input type="submit" class="button submit" value="Go!">
+            <div class="register_transition">
+                <p>Dont have an account?</p>
+                <a href="#">Sign</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
